@@ -24,6 +24,8 @@ class RNN(torch.nn.Module):
         if neuron_lesion_prob is not None:
             self.neuron_mask = torch.full((self.Ng, ), 1.0 - neuron_lesion_prob)
             self.neuron_mask = torch.bernoulli(self.neuron_mask).to(self.device)
+        else:
+            self.neuron_mask = None
 
         # Input weights
         self.encoder = torch.nn.Linear(self.Np, self.Ng, bias=False)
