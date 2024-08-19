@@ -4,7 +4,7 @@ Based on the Sorscher grid cell RNN, this model is meant to hold grids in its hi
 Quick-start:
 * lesion_analysis_pipeline.ipynb: Apply lesions to a set of trained models and track the translational and rotational drift in the grids over time.
 * training_models.py: Run this script to train a new RNN model.
-* grid_cell_analysis: Probe the 
+* grid_cell_analysis: Examine network functions and visualize ratemaps
 
 Includes:
 * trajectory_generator.py: Generate simulated rat trajectories in a rectangular environment.
